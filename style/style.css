@@ -74,8 +74,71 @@
     width: 100%;
 }
 
+/* Plant Section */
+.plant-header {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+
+.plant-text {
+    text-align: center;
+    max-width: 888px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+}
+
+.plant-card {
+    max-width: 270px;
+    max-height: 485px;
+
+}
+
+.card-img {
+    width: 100%;
+}
+
+.f-name {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 8;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.f-price {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 19px 85px;
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 0;
+}
+
 /* Responsive */
 @media screen and (max-width:576px) {
+
     /* Nav Section */
     .nav-links {
         display: none;
@@ -84,16 +147,45 @@
     .nav-cart {
         max-height: 25px;
     }
+
     /* Banner Section */
     .banner {
         flex-direction: column-reverse;
     }
 
     .banner-header {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
-    .banner-text
-    {
+
+    .banner-text {
         text-align: justify;
+        font-size: 0.8rem;
+    }
+
+    /* Plats Section */
+    .plant-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plant-card {
+        max-width: 270px;
+        max-height: 485px;
+
+    }
+    .btn {
+        padding: 19px 30px;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+    .plant-header {
+        font-size: 1.5rem;
+    }
+    .plant-text
+    {
+        font-size: 0.8rem;
+    }
+    .f-name,.f-price
+    {
+        font-size: 1rem;
     }
 }
