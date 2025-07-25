@@ -311,7 +311,6 @@ input[type="email"] {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
 .footer-content3,
 .footer-content2 {
     display: flex;
@@ -322,7 +321,11 @@ input[type="email"] {
 .footer-img {
     margin-right: 20px;
 }
-
+.footer-content4-img
+{
+    display: flex;
+    align-items: center;
+}
 .footer-link {
     text-decoration: none;
 }
