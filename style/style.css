@@ -196,6 +196,81 @@
     margin-bottom: 50px;
 }
 
+.deal-img-container1 {
+    background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/deal-bloom.png);
+    background-size: cover;
+    width: 100%;
+    height: 201px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deal-img-container2 {
+    background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/deal-ana.png);
+    background-size: cover;
+    width: 100%;
+    height: 201px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deal-img-container3 {
+    background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/deal-zabo.png);
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deal-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.deal-img-container1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.deal-img-container2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.deal-img-container3 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.deal-img-text {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.deal-link {
+    color: white;
+}
+
+.deal-img-text1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.deal-link1 {
+    font-size: 1.7rem;
+    color: white;
+}
+
 /* Join Section */
 .join {
     background-image: url(../assets/news-letter-bg.png);
@@ -336,6 +411,36 @@ input[type="email"] {
         font-size: 0.8rem;
     }
 
+    /* Deal Section */
+    .deal-header {
+        font-size: 1.8rem;
+    }
+
+    .deal-text {
+        font-size: 0.8rem;
+    }
+
+    .deal-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .deal-img-container3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .deal-img-text1 {
+        font-size: 1.2rem;
+    }
+
+    .deal-link1 {
+        font-size: 1rem;
+    }
+
+    .deal-img-container3 {
+        height: 201px;
+    }
+
     /* Join Section */
     .join {
         height: 275px;
@@ -360,8 +465,8 @@ input[type="email"] {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
-    .footer-text
-    {
+
+    .footer-text {
         margin-bottom: 0;
         max-width: 400px;
     }
